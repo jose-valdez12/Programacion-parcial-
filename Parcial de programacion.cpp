@@ -34,3 +34,28 @@ case  1 :
    system("pause"); 
    
 	break;
+	case 2 :
+	 char seguir;
+    int a, numero;
+
+    do   
+    {
+        printf( "\n   Introduzca un n%cmero entero: ", 163 );
+        scanf( "%d", &numero );
+
+        printf( "\n   La tabla de multiplicar del %d es:\n", numero );
+
+        /* Inicio de la ecuacuion o formula  */
+
+        for ( a = 1 ; a <= 10 ; a++ )
+            printf( "\n   %d * %d = %d", a, numero, a * numero );
+
+        /* Fin del de la ecuacion o formula */
+
+        printf( "\n\n   %cDesea ver otra tabla (s/n)?: ", 168 );
+        fflush( stdin );
+        scanf( "%c", &seguir );
+
+    } while ( seguir != 'n' );
+    
+  break;
